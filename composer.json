@@ -1,0 +1,40 @@
+{
+    "name": "simtabi/livewire-datatables-theming",
+    "description": "Livewire Datatables with bootstrap 5 support. Uses MedicOneSystems under the hood",
+    "keywords": [
+        "mediconesystems",
+        "livewire",
+        "datatables",
+        "tables",
+        "laravel",
+        "bootstrap"
+    ],
+    "type": "library",
+    "require": {
+        "simtabi/livewire-datatables": "dev-master"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imani Manyara",
+            "email": "hello@imanimanyara.com",
+            "homepage": "https://www.imanimanyara.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Simtabi\\LivewireDatatablesThemes\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Simtabi\\LivewireDatatablesThemes\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
