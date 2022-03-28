@@ -11,7 +11,7 @@
     ],
     "type": "library",
     "require": {
-        "simtabi/livewire-datatables": "dev-master"
+        "simtabi/livewire-datatables": "^0.9.3"
     },
     "require-dev": {
     },
