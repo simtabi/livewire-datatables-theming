@@ -1,6 +1,6 @@
 <?php
 
-namespace Simtabi\LivewireDatatablesThemes;
+namespace Simtabi\LivewireDatatablesTheming;
 
 use Illuminate\Support\ServiceProvider as Provider;
 

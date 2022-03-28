@@ -26,13 +26,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Simtabi\\LivewireDatatablesThemes\\": "src"
+            "Simtabi\\LivewireDatatablesTheming\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Simtabi\\LivewireDatatablesThemes\\ServiceProvider"
+                "Simtabi\\LivewireDatatablesTheming\\ServiceProvider"
             ]
         }
     },
