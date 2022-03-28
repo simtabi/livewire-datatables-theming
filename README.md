@@ -13,7 +13,7 @@ composer require simtabi/livewire-datatables-theming
 No publish default views of Livewire Datatables.
 
 ```
-php artisan vendor:publish --tag="livewire-datatables"
+php artisan vendor:publish --tag="livewire-datatables-theming"
 ```
 
 ## Developers
