@@ -20,7 +20,7 @@ final class LivewireDatatablesThemingServiceProvider extends Provider
         $this->loadTranslationsFrom(self::PACKAGE_PATH . "resources/lang/", $this->packageName);
         $this->loadMigrationsFrom(self::PACKAGE_PATH.'/../database/migrations');
         $this->loadViewsFrom(self::PACKAGE_PATH . "resources/views", $this->packageName);
-        $this->mergeConfigFrom(self::PACKAGE_PATH . "config/{$this->packageName}.php", $this->packageName);
+        $this->mergeConfigFrom(self::PACKAGE_PATH . "config/config.php", $this->packageName);
 
         $this->app->make('config')->set([
             'livewire-tables.theme' => 'bootstrap-5',
@@ -43,7 +43,7 @@ final class LivewireDatatablesThemingServiceProvider extends Provider
         {
 
             $this->publishes([
-                self::PACKAGE_PATH . "config/{$this->packageName}.php"  => config_path("{$this->packageName}.php"),
+                self::PACKAGE_PATH . "config/config.php"               => config_path("{$this->packageName}.php"),
             ], "{$this->packageName}:config");
 
             $this->publishes([
