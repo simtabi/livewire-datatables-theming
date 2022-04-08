@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Simtabi\\LivewireDatatablesTheming\\ServiceProvider"
+                "Simtabi\\LivewireDatatablesTheming\\LivewireDatatablesThemingServiceProvider"
             ]
         }
     },
