@@ -11,7 +11,7 @@
     ],
     "type": "library",
     "require": {
-        "simtabi/livewire-datatables": "dev-master"
+        "rappasoft/laravel-livewire-tables": "^2.0"
     },
     "require-dev": {
     },
