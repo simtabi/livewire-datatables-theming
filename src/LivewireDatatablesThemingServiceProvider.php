@@ -10,7 +10,6 @@ final class LivewireDatatablesThemingServiceProvider extends Provider
     private string $packageName = 'livewire-datatables-theming';
     private const  PACKAGE_PATH = __DIR__.'/../';
 
-
     /**
      * Register the application services.
      *
@@ -44,19 +43,27 @@ final class LivewireDatatablesThemingServiceProvider extends Provider
         {
 
             $this->publishes([
-                self::PACKAGE_PATH . "config/{$this->packageName}.php" => config_path("{$this->packageName}.php"),
+                self::PACKAGE_PATH . "config/{$this->packageName}.php"  => config_path("{$this->packageName}.php"),
             ], "{$this->packageName}:config");
 
             $this->publishes([
-                self::PACKAGE_PATH . "public"                          => public_path("vendor/{$this->packageName}"),
+                self::PACKAGE_PATH . "public"                           => public_path("vendor/{$this->packageName}"),
             ], "{$this->packageName}:assets");
 
             $this->publishes([
-                self::PACKAGE_PATH . "resources/views"                 => resource_path("views/vendor/{$this->packageName}"),
-            ], "{$this->packageName}:views");
+                self::PACKAGE_PATH . "resources/views"                  => resource_path("views/vendor/{$this->packageName}"),
+            ], "{$this->packageName}:all-views");
 
             $this->publishes([
-                self::PACKAGE_PATH . "resources/lang"                  => $this->app->langPath("vendor/{$this->packageName}"),
+                self::PACKAGE_PATH . "resources/views/medicone-systems" => resource_path("views/vendor/{$this->packageName}"),
+            ], "{$this->packageName}:medicone-systems-views");
+
+            $this->publishes([
+                self::PACKAGE_PATH . "resources/views"                  => resource_path("views/vendor/{$this->packageName}"),
+            ], "{$this->packageName}:rappasoft-views");
+
+            $this->publishes([
+                self::PACKAGE_PATH . "resources/lang"                   => $this->app->langPath("vendor/{$this->packageName}"),
             ], "{$this->packageName}:translations");
         }
 
