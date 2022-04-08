@@ -55,11 +55,11 @@ final class LivewireDatatablesThemingServiceProvider extends Provider
             ], "{$this->packageName}:all-views");
 
             $this->publishes([
-                self::PACKAGE_PATH . "resources/views/medicone-systems" => resource_path("views/vendor/{$this->packageName}"),
+                self::PACKAGE_PATH . "resources/views/medicone-systems" => resource_path("views/vendor/datatables"),
             ], "{$this->packageName}:medicone-systems-views");
 
             $this->publishes([
-                self::PACKAGE_PATH . "resources/views"                  => resource_path("views/vendor/{$this->packageName}"),
+                self::PACKAGE_PATH . "resources/views/rappasoft"        => resource_path("views/vendor/livewire-tables"),
             ], "{$this->packageName}:rappasoft-views");
 
             $this->publishes([
